@@ -1,13 +1,13 @@
 import sys
 
-username = sys.argv[1]
-password = sys.argv[2]
+USER_NAME = sys.argv[1]
+PASSWORD = sys.argv[2]
 
 print("Tentando autenticar com as seguintes credenciais:")
-print("Username:", username)
-print("Password", password)
+print("Username:", USER_NAME)
+print("Password", PASSWORD)
 
-if username == 'marcos' and password == '123456':
+if USER_NAME == 'marcos' and PASSWORD == '123456':
     print("Autenticação OK")
 else:
     raise Exception("Login e senhas incorretos")
